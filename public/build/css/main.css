@@ -1,0 +1,997 @@
+@font-face {
+  font-family: 'Citrsoen';
+  src: url(../fonts/Citroen.woff2?63a4971c52801202530cb179abe85a77) format("woff2"), url(../fonts/Citroen.woff?6b0fcd866fc57bc253cc8b1dabe2b35d) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Citroen';
+  src: url(../fonts/Citroen-Bold.woff2?c818ad3972ecbc55b89e0963f7208dcc) format("woff2"), url(../fonts/Citroen-Bold.woff?2876c40fedd8ca6740521310283c2dc8) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+h6 {
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Citroen';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1320px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #eaf3f8;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: inherit;
+  }
+}
+
+h1 {
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 2.25em;
+  line-height: 1;
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+h6 {
+  font-size: 1.56em;
+  line-height: 1;
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+.box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-left .box-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 90vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-left .box-car {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.box-left .box-car .title {
+  width: 100%;
+  padding: 0 5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-left .box-car .title {
+    padding-top: 25px;
+  }
+}
+
+.box-left .box-car .description {
+  width: 100%;
+  padding: 0 5em;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-left .box-car .description {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.box-left .box-car .car {
+  position: relative;
+}
+
+.box-left .box-car .car img {
+  max-height: 300px;
+}
+
+.box-right .box-formulario {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-right .box-formulario {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.box-right .box-formulario form {
+  width: 75%;
+  background-color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 40px;
+  border-radius: 15px;
+  max-width: 650px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-right .box-formulario form {
+    padding: 15px 20px;
+  }
+}
+
+.box-right .box-formulario form .table-titulo {
+  font-size: 1.9em;
+  font-weight: bold;
+  line-height: 1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1320px) {
+  .box-right .box-formulario form .table-titulo br {
+    display: none;
+  }
+}
+
+.box-right .box-formulario form .input--nao {
+  margin: 0;
+}
+
+.box-right .box-formulario form .box-select {
+  width: 100%;
+}
+
+.box-right .box-formulario form .title-select {
+  display: none;
+  padding-top: .5em;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.box-right .box-formulario form .cs-placeholder {
+  padding-right: calc(3em);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  min-height: 49px;
+}
+
+.box-right .box-formulario form .cs-placeholder label {
+  font-size: 1.56em;
+  font-weight: normal;
+  color: #5D5B5B;
+  position: relative;
+  margin: 0;
+}
+
+.box-right .box-formulario form .cs-placeholder label:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #5D5B5B;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.box-right .box-formulario form .cs-placeholder p {
+  font-size: 1.56em;
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+.box-right .box-formulario form .cs-placeholder:after {
+  margin-right: 0;
+  position: relative;
+  top: calc(50% - 12.5px);
+  right: -33px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .box-right .box-formulario form .cs-placeholder:after {
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #5D5B5B;
+  }
+}
+
+.box-right .box-formulario form .cs-placeholder.opt-selected {
+  text-align: left;
+  background-color: #EAF3F8;
+  padding: .5em 1em;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box-right .box-formulario form .cs-placeholder.opt-selected label {
+  font-size: 1.56em;
+  font-weight: normal;
+  color: #5D5B5B;
+  position: relative;
+  margin: 0;
+  line-height: 1em;
+}
+
+.box-right .box-formulario form .cs-placeholder.opt-selected label:after {
+  display: none;
+}
+
+.box-right .box-formulario form .cs-placeholder.opt-selected p {
+  font-size: 1em;
+  font-weight: normal;
+  color: #5D5B5B;
+  margin: 0;
+}
+
+.box-right .box-formulario form .cs-placeholder.opt-selected:after {
+  display: none;
+}
+
+.box-right .box-formulario form .cs-options ul {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.box-right .box-formulario form .cs-options ul span {
+  padding: 15px 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box-right .box-formulario form .cs-options ul span label {
+  font-size: 1.56em;
+  font-family: 'Citroen';
+  font-weight: normal;
+  color: #5D5B5B;
+  position: relative;
+  margin: 0;
+  line-height: 1;
+}
+
+.box-right .box-formulario form .cs-options ul span label:after {
+  display: none;
+}
+
+.box-right .box-formulario form .cs-options ul span p {
+  font-size: 1em;
+  font-weight: normal;
+  color: #5D5B5B;
+  margin: 0;
+}
+
+.box-right .box-formulario form .cs-options ul span:after {
+  display: none;
+}
+
+.box-right .box-formulario form .btn-quero-desconto {
+  margin: 15px 0;
+  font-size: 2.18em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #EAF3F8;
+  padding: 5px;
+  border-radius: 10px;
+  background: #475661;
+  background: -webkit-gradient(linear, left top, left bottom, from(#475661), to(#171f24));
+  background: linear-gradient(to bottom, #475661 0%, #171f24 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#475661', endColorstr='#171f24',GradientType=0 );
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-right .box-formulario form .btn-quero-desconto {
+    padding: 5px;
+  }
+}
+
+.box-right .box-formulario form .btn-quero-desconto:hover {
+  background: #171f24;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171f24), to(#475661));
+  background: linear-gradient(to bottom, #171f24 0%, #475661 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f24', endColorstr='#475661',GradientType=0 );
+}
+
+.box-right .box-formulario form .table {
+  text-align: center;
+  line-height: 1;
+  font-size: .9em;
+  margin: 0;
+}
+
+.box-right .box-formulario form .table span {
+  font-weight: normal;
+  color: #5D5B5B;
+}
+
+.rodape {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .rodape {
+    height: auto;
+  }
+}
+
+.rodape .concessionaria {
+  max-width: 750px;
+  padding: 15px 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .rodape .concessionaria {
+    max-width: 100%;
+  }
+}
+
+.rodape .selo {
+  position: relative;
+}
+
+.rodape .selo span {
+  font-size: 16px;
+  font-family: 'Citroen';
+  font-weight: normal;
+  line-height: 19px;
+  color: #5D5B5B;
+  padding-left: 10px;
+}
+
+.mensagem {
+  display: none;
+  width: 75%;
+  background-color: #FCFCFC;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 40px;
+  border-radius: 15px;
+  max-width: 650px;
+}
+
+.mensagem span {
+  font-size: 3em;
+  line-height: 1;
+  text-align: center;
+}
+
+.loading {
+  display: none;
+}
+
+.loading img {
+  height: 50px;
+}
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  width: 100%;
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: 400;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #696969;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+
+.icon {
+  color: #ddd;
+  font-size: 150%;
+}
+
+/* Nao */
+
+.input--nao {
+  overflow: hidden;
+  padding-top: .5em;
+}
+
+.input__field--nao {
+  padding: 0.7em 0em 0.25em;
+  width: 100%;
+  background: transparent;
+  color: #9da8b2;
+  font-size: 20px;
+}
+
+.input__label--nao {
+  position: absolute;
+  top: 0.95em;
+  font-size: 16px;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0em;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.2s 0.15s, color 1s;
+  -webkit-transition: color 1s, -webkit-transform 0.2s 0.15s;
+  transition: color 1s, -webkit-transform 0.2s 0.15s;
+  transition: transform 0.2s 0.15s, color 1s;
+  transition: transform 0.2s 0.15s, color 1s, -webkit-transform 0.2s 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  font-family: 'Citroen';
+  font-weight: normal;
+}
+
+.graphic--nao {
+  stroke: #707070;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+  -webkit-transition: stroke 0.7s, -webkit-transform 0.7s;
+  transition: stroke 0.7s, -webkit-transform 0.7s;
+  transition: transform 0.7s, stroke 0.7s;
+  transition: transform 0.7s, stroke 0.7s, -webkit-transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.input__field--nao:focus + .input__label--nao,
+.input--filled .input__label--nao {
+  font-family: 'Citroen';
+  font-weight: bold;
+  color: #5D5B5B;
+  -webkit-transform: translate3d(0, -1.9em, 0) scale3d(0.9, 0.9, 1);
+  transform: translate3d(0, -1.9em, 0) scale3d(0.9, 0.9, 1);
+}
+
+.input__field--nao:focus ~ .graphic--nao,
+.input--filled .graphic--nao {
+  stroke: #5D5B5B;
+  -webkit-transform: translate3d(-66.6%, 0, 0);
+  transform: translate3d(-66.6%, 0, 0);
+}
+
+/* Default custom select styles */
+
+div.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.cs-select:focus {
+  outline: none;
+  /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.cs-select span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+
+.cs-select > span {
+  padding-right: 3em;
+}
+
+.cs-select > span::after {
+  content: '\25BE';
+  right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+  content: '\2713';
+  margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* Options */
+
+.cs-select .cs-options {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+}
+
+.cs-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.cs-select ul span {
+  padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+  background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+
+.cs-select li.cs-optgroup ul {
+  padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+  cursor: default;
+}
+
+div.cs-skin-border {
+  background: transparent;
+  font-size: 1em;
+  font-weight: 700;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 30em) {
+  div.cs-skin-border {
+    font-size: 1em;
+  }
+}
+
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 20px solid #5D5B5B;
+}
+
+.cs-skin-border ul span::after {
+  content: '';
+  opacity: 0;
+}
+
+.cs-skin-border .cs-selected span::after {
+  content: '\E00E';
+  color: #ddd9c9;
+  font-size: 1.5em;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.cs-skin-border.cs-active > span {
+  background: #fff;
+  border-color: #fff;
+  color: #2980b9;
+}
+
+.cs-skin-border .cs-options {
+  color: #2980b9;
+  font-size: 0.75em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+  transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.cs-skin-border.cs-active .cs-options {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.cs-skin-border ul span {
+  padding: 1em 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+  background: #EAF3F8;
+}
+
+.control-group {
+  width: 100%;
+  font-size: 1em;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .control-group {
+    width: auto;
+  }
+}
+
+.control-group img {
+  max-width: 80px;
+  z-index: 10;
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .control-group img {
+    max-width: 52px;
+  }
+}
+
+.control {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  height: 115px;
+  width: 20%;
+  max-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 2.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .control {
+    width: auto;
+  }
+}
+
+.control:first-child {
+  width: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+}
+
+.control:first-child span {
+  padding-top: 35px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .control:first-child span {
+    font-size: 15px;
+  }
+}
+
+.control p {
+  font-size: 16px;
+  font-family: 'Citroen';
+  font-weight: normal;
+  line-height: 16px;
+  position: relative;
+  z-index: 10;
+  color: #5D5B5B;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .control p {
+    font-size: 13px;
+  }
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover and focus states */
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #EAF3F8;
+}
+
+/* Checked state */
+
+.control input:checked ~ .control__indicator {
+  background: #EAF3F8;
+}
+
+/* Hover state whilst checked */
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #EAF3F8;
+}
+
+/* Disabled state */
+
+.control input:disabled ~ .control__indicator {
+  pointer-events: none;
+  opacity: .6;
+  background: #e6e6e6;
+}
+
+/* Show check mark */
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+/* Checkbox tick */
+
+.control--checkbox .control__indicator:after {
+  top: 4px;
+  left: 8px;
+  width: 3px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+
+.control--radio .control__indicator:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Disabled circle colour */
+
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+label#cor-error {
+  position: absolute;
+  left: 0;
+}
+
+label.error {
+  font-size: 0px;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+  background-color: red;
+  position: absolute;
+  bottom: 2px;
+  color: transparent;
+}
+
